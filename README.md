@@ -97,7 +97,7 @@ http://localhost:5173
 
 ### Stock Search
 
-![Stock Search](public/src/assets/stock-live-4.png)
+![Stock Search](public/assets/stock-live-4.png)
 
 ### Stock Details
 
