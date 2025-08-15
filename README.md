@@ -83,6 +83,30 @@ http://localhost:5173
 
 ## 📸 Screenshots
 
+### Home Page Hero Section
+
+![Home Page](assets/stock-live-1.png)
+
+### Home Page Middle Section
+
+![Home Page](assets/stock-live-2.png)
+
+### Home Page footer section
+
+![Home Page](assets/stock-live-3.png)
+
+### Stock Search
+
+![Stock Search](assets/stock-live-4.png)
+
+### Stock Details
+
+![Stock Details](assets/stock-live-5.png)
+
+### Mobile View
+
+![Mobile View](assets/stock-live-6.png)
+
 **Home Page**  
 _(Search stocks, view trending tickers)_
 
