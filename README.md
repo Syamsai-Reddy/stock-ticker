@@ -1,113 +1,70 @@
-# 📈 Stock Ticker App
+# 📈 Stock Ticker Application
 
-A simple React/Next.js app to search stocks and display NIFTY movers.
-
----
+A modern, professional **Stock Ticker** application built with **React, TypeScript, Tailwind CSS, and Vite**, designed to deliver real-time market data with a clean financial UI.
 
 ## 🚀 Features
 
-- Search for stocks via the search bar.
-- Display live NIFTY movers in a grid.
-- Modular components for easy maintenance (`SearchBar`, `StockCard`).
-- Tailwind CSS styling.
-
----
-
-## 🛠 Tech Stack
-
-- **Next.js / React** — UI framework
-- **Tailwind CSS** — Styling
-- **Custom API** — `getNiftyMovers` for fetching market data
+- 🔍 **Smart Stock Search** — Autocomplete search with keyboard navigation
+- 📊 **Interactive Stock Charts** — Built using Recharts for smooth visualization
+- 📰 **Rolling Ticker Bar** — Displays live market movers at the top
+- 🎯 **SEO Optimization** — Dynamic meta tags, Open Graph, Twitter Cards, and JSON-LD
+- ⚡ **Real-Time Data** — Integrated with API, with fallback to mock data
+- 🎨 **Professional Design** — Gradients, shadows, animations, and responsive layout
+- 📱 **Mobile-First** — Works perfectly on mobile, tablet, and desktop
+- 🛠 **Error Handling** — Graceful fallbacks and UI alerts for API issues
 
 ---
 
 ## 📂 Project Structure
 
-```
 src/
-├── lib/api.ts              # API integration & mock data
+├── lib/api.ts # API integration & mock data
 ├── components/
-│   ├── TickerBar.tsx       # Rolling ticker component
-│   ├── StockSearch.tsx     # Smart search with autocomplete
-│   ├── StockChart.tsx      # Interactive price charts
-│   └── SEOHead.tsx         # Dynamic SEO management
+│ ├── TickerBar.tsx # Rolling ticker component
+│ ├── StockSearch.tsx # Smart search with autocomplete
+│ ├── StockChart.tsx # Interactive price charts
+│ └── SEOHead.tsx # Dynamic SEO management
 ├── pages/
-│   ├── Index.tsx           # Landing page with search
-│   └── StockDetail.tsx     # Dynamic stock details page
-└── Design system enhanced in index.css & tailwind.config.ts
-```
+│ ├── Index.tsx # Landing page with search
+│ └── StockDetail.tsx # Dynamic stock details page
+└── index.css # Design system styles
 
 ---
 
-## 🏃 Walkthrough
+## 🛠 Tech Stack
 
-1️⃣ **Clone the repository**
+- **Frontend:** React + TypeScript + Tailwind CSS
+- **Routing:** React Router
+- **Charts:** Recharts
+- **Build Tool:** Vite
+- **API Integration:** REST API + Mock Data Fallback
+
+---
+
+## 📦 Installation
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/stock-ticker-app.git
-cd stock-ticker-app
-```
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
 
-2️⃣ **Install dependencies**
+Install dependencies:
 
-```bash
 npm install
-```
 
-3️⃣ **Set up environment variables**
-Create `.env.local` in the root folder:
 
-```env
-NEXT_PUBLIC_API_BASE_URL=https://your-api-url
-```
+Run the development server:
 
-4️⃣ **Run the development server**
-
-```bash
 npm run dev
-```
 
-Now visit:  
-[http://localhost:3000](http://localhost:3000) in your browser.
 
-5️⃣ **Understand the flow**
+Build for production:
 
-- **HomePage** calls `getNiftyMovers()` from `lib/api.js`.
-- `getNiftyMovers()` fetches the NIFTY movers list from your API.
-- The list is rendered as `StockCard` components.
-- `SearchBar` lets you search stocks by symbol/name.
-
-6️⃣ **Handling API responses**
-If `movers` is **not** an array, a fallback message is displayed:
-
-```javascript
-if (!Array.isArray(movers)) {
-  return <p>Failed to load NIFTY movers.</p>;
-}
-```
-
-7️⃣ **Build for production**
-
-```bash
 npm run build
-npm start
+
+
+Preview the production build:
+
+npm run preview
 ```
-
----
-
-## 📸 Example Output
-
-| Search Bar                     | NIFTY Movers                |
-| ------------------------------ | --------------------------- |
-| User can search for "RELIANCE" | Displays top movers in grid |
-
----
-
-## 🐛 Troubleshooting
-
-- **`movers.map is not a function`**  
-  → Check if `getNiftyMovers()` is returning an array.  
-  → Log the API response:
-  ```javascript
-  console.log(movers);
-  ```
