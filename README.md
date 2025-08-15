@@ -85,27 +85,27 @@ http://localhost:5173
 
 ### Home Page Hero Section
 
-![Home Page](assets/stock-live-1.png)
+![Home Page](public/assets/stock-live-1.png)
 
 ### Home Page Middle Section
 
-![Home Page](assets/stock-live-2.png)
+![Home Page](public/assets/stock-live-2.png)
 
 ### Home Page footer section
 
-![Home Page](assets/stock-live-3.png)
+![Home Page](public/assets/stock-live-3.png)
 
 ### Stock Search
 
-![Stock Search](assets/stock-live-4.png)
+![Stock Search](public/src/assets/stock-live-4.png)
 
 ### Stock Details
 
-![Stock Details](assets/stock-live-5.png)
+![Stock Details](public/assets/stock-live-5.png)
 
 ### Mobile View
 
-![Mobile View](assets/stock-live-6.png)
+![Mobile View](public/assets/stock-live-6.png)
 
 **Home Page**  
 _(Search stocks, view trending tickers)_
