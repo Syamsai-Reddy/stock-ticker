@@ -50,7 +50,7 @@ src/
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/stock-ticker.git
+git clone https://github.com/Syamsai-Reddy/stock-ticker
 cd stock-ticker
 ```
 
