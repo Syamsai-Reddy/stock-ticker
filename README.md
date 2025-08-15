@@ -27,7 +27,7 @@ src/
 ├── pages/
 │ ├── Index.tsx # Landing page with search
 │ └── StockDetail.tsx # Dynamic stock details page
-└── index.css # Design system styles
+└── Design system enhanced in index.css & tailwind.config.ts
 
 ---
 
